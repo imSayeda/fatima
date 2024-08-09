@@ -1,0 +1,169 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Welcome to Sayeda Fatima's portfolio! Specializing in custom Discord apps and bots, website design, and development. Discover my expertise in HTML, CSS, JavaScript, and Discord.js. Check out my projects and hire me for your next project on Fiverr.">
+    <meta name="keywords" content="sayedafatima, Sayeda, Fatima, fiverr, discord, discord apps, discord bots, Custom discord apps, Custom discord bot, Website Design, HTML, CSS, Javascript, Discord.js">
+    <meta name="author" content="sayedafatima">
+    <meta name="theme-color" content="#ffe941">
+    <meta property="og:image" href="images/fatima.png">
+    <title>Sayeda Fatima</title>
+   <link rel="icon" type="image/png" href="images/fatima.png">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/gsap.min.js"></script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-8MKQBM234C"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8MKQBM234C');
+</script>
+</head>
+<body>
+    <div id="all">
+        <div class="cursor"></div>
+        <div id="loader">
+            <span class="color">Sayeda</span>Fatima 
+        </div>
+        <div id="breaker">
+        </div>
+        <div id="breaker-two">
+        </div>
+        <div id="navigation-content">
+            <div class="navigation-close">
+                <span class="close-first"></span>
+                <span class="close-second"></span>
+            </div>
+            <div class="navigation-links">
+                <a href="#" id="home-link">HOME</a>
+                <a href="#" id="about-link">ABOUT</a>
+            </div>
+        </div>
+        <div id="navigation-bar">
+            <div class="menubar">
+                <span class="first-span"></span>
+                <span class="second-span"></span>
+                <span class="third-span"></span>
+            </div>
+        </div>
+        <div id="header">
+            <div id="particles"></div>
+            <div class="social-media-links">
+               <a href="https://www.fiverr.com/sayedafatima5"><img src="images/fiverr.png" class="social-media" alt="fiverr-logo"></a><!--Your instagram homepage link inser in place of "#"-->
+                <a href="https://discord.gg/AktBra48rT"><img src="images/discord.png" class="social-media" alt="discord-logo"></a>
+            </div>
+            <div id="header">
+                <div id="particles"></div>
+                  <div class="header-content">
+                    <div class="header-content-box">
+                        <div class="firstline"><span class="color">Sayeda </span>Fatima</div>
+                        <div class="secondline">
+                            I'm a
+                            <span class="txt-rotate color" data-period="1200" data-rotate='[ "developer", "freelancer", "Discord apps developer", "website designer."]'></span>
+                            <span class="slash">|</span>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            </div>
+        </div>
+        <div id="about">
+            <div id="about-content">
+                <div class="about-header">
+                    About <span class="color">Me</span>
+                    <span class="header-caption">Get to Know <span class="color"> me.</span></span>
+                </div>
+                <div class="about-main">
+            <div class="about-first-paragraph wow">
+               <span class="about-first-line">
+                    I'm creative 
+                    <span class="color">developer</span>
+                     </span>
+                     <br>
+               <span class="about-second-line"> with a passion for crafting innovative digital experiences. With a strong background in web development and a specialization in custom Discord apps or bots, I bring ideas to life with clean, efficient code and a keen eye for design. My expertise spans across HTML, CSS, JavaScript, and Discord.js and more, allowing me to build interactive, user-friendly solutions that meet diverse needs.</span>
+            </div>
+            </div>
+            <div class="cv">
+                <a href="https://www.fiverr.com/sayedafatima5" download="Arlo Brown - CV"><button>Hire <span class="colors">Me</span></button></a>
+            </div>
+            </div>
+            <div id="services">
+                    <div class="services-heading wow">
+                        <span class="color">My</span> Services
+                    </div>
+                    <div class="services-content">
+                           <div class="service-one service wow">
+                               <div class="service-img">
+                               <img src="images/coding.png" alt="service-one">
+                               </div>
+                               <div class="service-description">
+                                <h2>Web Designing</h2>
+                                <p>Bringing ideas to life through innovative web design and development</p>
+                               </div>
+                           </div>
+                           <div class="service-two service wow">
+                               <div class="service-img">
+                               <img src="images/discordbot.png" alt="service-two">
+                               </div>
+                               <div class="service-description">
+                                <h2>Discord Development</h2>
+                                <p>Crafting custom Discord apps that enhance community interaction and streamline server management.</p>
+                               </div>
+                           </div>
+                           <div class="service-three service wow">
+                            <div class="service-img">
+                               <img src="images/discorddesign.png" alt="service-three">
+                            </div>
+                            <div class="service-description">
+                                <h2>Discord Server Development</h2>
+                                <p>Designing dynamic Discord servers that foster engagement and community growth.</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+
+    <!--all the divisions-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    	<script type="text/javascript">
+        function sendEmail() {
+            var name = $("#name");
+            var email = $("#email");
+            var subject = $("#subject");
+            var body = $("#body");
+            $('#submit').text("Sending");
+
+            if (isNotEmpty(name) && isNotEmpty(email) && isNotEmpty(subject) && isNotEmpty(body)) {
+                $.ajax({
+                   url: 'mail.php',
+                   method: 'POST',
+                   dataType: 'json',
+                   data: {
+                       name: name.val(),
+                       email: email.val(),
+                       subject: subject.val(),
+                       body: body.val()
+                       
+                   }, success: function (response) {
+                        $('#myForm')[0].reset();
+                        $('#submit').text("Thank you!!!");
+                   }
+                   
+                });
+            }
+        }
+
+        function isNotEmpty(caller) {
+            if (caller.val() == "") {
+                caller.css('border', '1px solid red');
+            $('#submit').text("Submit");
+                return false;
+            } else
+                caller.css('border', '');
+            return true;
+        }
+    </script>
+
+
+</body></html>
